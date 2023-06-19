@@ -19,7 +19,7 @@ const Tree = (arr) => {
     uniqueArr = [...new Set(arr.sort((a, b) => a - b))];
   }
   return {
-    root: buildTree(arr),
+    root: buildTree(uniqueArr),
     insert(value, node = this.root) {
       if (node == null) {
         return Node(value);
