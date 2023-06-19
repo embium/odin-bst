@@ -20,7 +20,6 @@ const Tree = (arr) => {
   }
   return {
     root: buildTree(arr),
-    levelOrderTransversed: [],
     insert(value, node = this.root) {
       if (node == null) {
         return Node(value);
